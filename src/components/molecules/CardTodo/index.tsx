@@ -69,41 +69,50 @@ export default function CardTodo({
       >
         {description}
       </Text>
-      <Text fonstSize={12} color="#939393" style={{ marginTop: 10 }}>
-        {moment(updateAt).format("DD MMM YYYY, HH:mm")}
-      </Text>
 
-      <View
-        style={{
-          flex: 1,
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-        }}
-      >
-        <Image
-          source={ICONS.edit}
-          style={{ width: 18, height: 18, margin: 5 }}
-        />
-        <TouchableOpacity
+      <View style={{ flex: 1 }}>
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "flex-end",
+            marginBottom: 8,
+          }}
+        >
+          <Text fonstSize={12} color="#939393">
+            {moment(updateAt).format("DD MMM YYYY, HH:mm")}
+          </Text>
+        </View>
+        <View
           style={{
             flexDirection: "row",
-            backgroundColor: isDone ? "#c0392b" : "#2ecc71",
-            paddingVertical: 5,
-            paddingHorizontal: 10,
-            borderRadius: 99,
-            alignItems: "center",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
           }}
-          onPress={onCompleate}
         >
           <Image
-            source={isDone ? ICONS.cancel : ICONS.done}
-            style={{ width: 18, height: 18 }}
+            source={ICONS.edit}
+            style={{ width: 18, height: 18, margin: 5 }}
           />
-          <Text color="white" fonstSize={12} style={{ marginLeft: 5 }}>
-            {isDone ? "Cancel" : "Done"}
-          </Text>
-        </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              backgroundColor: isDone ? "#c0392b" : "#2ecc71",
+              paddingVertical: 5,
+              paddingHorizontal: 10,
+              borderRadius: 99,
+              alignItems: "center",
+            }}
+            onPress={onCompleate}
+          >
+            <Image
+              source={isDone ? ICONS.cancel : ICONS.done}
+              style={{ width: 18, height: 18 }}
+            />
+            <Text color="white" fonstSize={12} style={{ marginLeft: 5 }}>
+              {isDone ? "Cancel" : "Done"}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </Card>
   );

@@ -3,12 +3,15 @@ import { Dimensions } from "react-native";
 export const WIDTH = Dimensions.get("window").width;
 export const HEIGHT = Dimensions.get("screen").height;
 export const SHADOW = {
-  shadowColor: "#000000",
+  borderWidth: 0.5,
+  borderColor: "#3498db",
+  shadowColor: "#000",
   shadowOffset: {
     width: 0,
-    height: 4.5,
+    height: 2,
   },
-  shadowOpacity: 0.17,
-  shadowRadius: 3.05,
-  elevation: 4,
+  shadowOpacity: 0.25,
+  shadowRadius: 3.84,
+
+  elevation: 5,
 };
