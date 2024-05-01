@@ -39,8 +39,8 @@ Several things that need to be prepared include :
 - ***(optional)** IOS or Android Emulator like Xcode and Android Studio Emulator*
 - ***(optional)** Expo application for IOS or Android (if we dont have emulator)*
 
-[!WARNING]  
-For now, it still cannot be run on the web because there are some libraries that do not support animation on the web.
+> [!WARNING]  
+> For now, it still cannot be run on the web because there are some libraries that do not support animation on the web.
 
 
 ## Installation
