@@ -31,7 +31,7 @@ Here are some divisions of atomic design :
 In summary, Atomic Design helps maintain consistency, modularity, and scalability in React applications. By breaking down UI elements into smaller pieces, we can create reusable components that enhance code readability and maintainability. 
 
 
-## Setup Applicariom
+## Setup Application
 
 Several things that need to be prepared include :
 
