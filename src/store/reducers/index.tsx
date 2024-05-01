@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import dataCount from "./dataCount";
+import dataTodo from "./dataTodo";
 
 const rootReducer = combineReducers<any>({
-  dataCount,
+  dataTodo,
 });
 
+export type RootState = ReturnType<typeof rootReducer>;
 export default rootReducer;

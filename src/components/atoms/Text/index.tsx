@@ -28,6 +28,7 @@ export default function Text({
         {
           fontSize: fonstSize,
           color: color,
+          lineHeight: fonstSize * 1.2,
         },
         regular && { fontFamily: "regular" },
         bold && { fontFamily: "bold" },
