@@ -7,6 +7,7 @@ const ICONS = {
   cancel: require("./cancel.png"),
   search: require("./search.png"),
   basket: require("./basket.png"),
+  menu: require("./menu.png"),
 };
 
 export default ICONS;

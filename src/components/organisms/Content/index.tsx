@@ -2,6 +2,7 @@ import { View, ScrollView } from "react-native";
 import React from "react";
 import { IChildern } from "@interfaces/InterfaceGlobal";
 import { styles } from "./styles";
+import Header from "@components/molecules/Header";
 
 type IProps = {
   havePadding?: boolean;
@@ -13,6 +14,7 @@ export default function Content({
 }: Readonly<IProps>) {
   return (
     <View style={[styles.container, { padding: havePadding ? 20 : 0 }]}>
+      <Header />
       {children}
     </View>
   );

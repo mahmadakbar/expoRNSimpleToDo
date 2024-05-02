@@ -17,7 +17,7 @@ export default function HederMain() {
   };
   return (
     <View style={{ padding: 20 }}>
-      <Text fonstSize={34} bold style={{ marginTop: 20 }}>
+      <Text fonstSize={34} bold>
         Welcome To Task Manager!
       </Text>
 

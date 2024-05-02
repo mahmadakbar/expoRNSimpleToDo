@@ -1,4 +1,4 @@
-import { Image, View, TouchableOpacity } from "react-native";
+import { Image, View, TouchableOpacity, Platform } from "react-native";
 import React, {
   useCallback,
   useEffect,
@@ -21,7 +21,13 @@ export default function Modal({ children }: Readonly<IChildern>) {
   const [modalOpen, setModalOpen] = useState(false);
   const [content, setContent] = useState(modalContent.content);
 
-  const snapPoints = useMemo(() => ["25%", "50%", "70%"], []);
+  const snapPoints = useMemo(() => {
+    if (Platform.OS === "ios") {
+      return ["25%", "50%", "80%"];
+    } else {
+      return ["25%", "50%", "70%"];
+    }
+  }, []);
 
   useEffect(() => {
     if (modalOpen) {
